@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package bank;
+
+option go_package = "github.com/jasonsalas/protobank";
+
+import "google/protobuf/timestamp.proto";
+
+message Transaction {
+    enum Operation {
+        Credit = 0;
+        Debit = 1;
+    }
+
+    google.protobuf.Timestamp time = 1;
+    Operation operation = 2;
+    double amount = 3;
+}
+
+message FetchRequest {
+    string accountId = 1;
+}
+
+message FetchResponse {
+    // this could be repeated, as well
+    Transaction transaction = 1;
+}
+
+service TransactionService {
+    rpc Fetch(FetchRequest) returns (stream FetchResponse) {};
+}
