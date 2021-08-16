@@ -18,4 +18,4 @@ WORKDIR /app
 COPY --from=builder /app/protobank-server .
 EXPOSE 50051
 
-CMD [ "./app/protobank-server" ]
+CMD [ "/app/protobank-server" ]
