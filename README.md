@@ -18,3 +18,12 @@ This project uses protocol buffers and Go to create a simple virtual bank that s
 - Pull the [cloud container image](https://hub.docker.com/repository/docker/jasonsalas/protobank): `docker pull jasonsalas/protobank:v1.0`
 - Spin-up a container: `docker run --name protobank -p 50051:50051 -d jasonsalas/protobank:v1.0`
 - Compile the client: `go build ./cmd/client`, then `./cmd/client`
+
+## Result:
+On the server
+
+![On the server](https://github.com/jasonsalas/protobank/blob/main/server.JPG?raw=true)
+
+On the client
+
+![On the client](https://github.com/jasonsalas/protobank/blob/main/client.JPG?raw=true)
