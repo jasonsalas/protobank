@@ -4,6 +4,8 @@
 
 This project uses protocol buffers and Go to asynchronous data transfer by way of long-lived TCP connections via HTTP/2. This creates a virtual bank that streams a customer's account transactions to the client in the terminal.
 
+I explain it all [on my blog](https://medium.com/@jasonsalas671/protobank-server-side-streaming-grpc-with-go-f5eb54d427b4).
+
 ## Usage patterns ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jasonsalas/protobank/Build%20Go%20application)
 ### 1. From command line
 - Start the server: `go run --race cmd/server`
