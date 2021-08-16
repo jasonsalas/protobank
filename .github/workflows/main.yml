@@ -16,4 +16,4 @@ jobs:
       - name: Build
         env:
           GOPROXY: "https://proxy.golang.org"
-        run: go build ./cmd/client -o protobank-server
+        run: go build ./cmd/client -o ./cmd/client/protobank-server
