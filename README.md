@@ -4,17 +4,17 @@
 
 This project uses protocol buffers and Go to asynchronous data transfer by way of long-lived TCP connections via HTTP/2. This creates a virtual bank that streams a customer's account transactions to the client in the terminal.
 
-## Usage patterns ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jasonsalas/protobank/go-builder?style=plastic)
+## Usage patterns ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jasonsalas/protobank/Build%20Go%20application)
 ### 1. From command line
 - Start the server: `go run --race cmd/server`
 - Start the client: `go run --race cmd/client`
 
-### 2. From Docker locally ![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/jasonsalas/protobank)
+### 2. From Docker locally 
 - Build the image in Docker: `docker build -t protobank .`
 - Spin-up a container: `docker run --name protobank -p 50051:50051 -d protobank`
 - Start the client `go run --race ./cmd/client`
 
-### 3. From Docker Hub
+### 3. From Docker Hub ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/jasonsalas/protobank/v1.0)
 - Pull the [cloud container image](https://hub.docker.com/repository/docker/jasonsalas/protobank): `docker pull jasonsalas/protobank:v1.0`
 - Spin-up a container: `docker run --name protobank -p 50051:50051 -d jasonsalas/protobank:v1.0`
 - Compile the client: `go build ./cmd/client`, then `./cmd/client`
