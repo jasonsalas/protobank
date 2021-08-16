@@ -22,8 +22,8 @@ This project uses protocol buffers and Go to create a simple virtual bank that s
 ## Result:
 On the server
 
-![On the server](https://github.com/jasonsalas/protobank/blob/main/server.JPG?raw=true)
+![On the server](https://github.com/jasonsalas/protobank/blob/main/images/server.JPG?raw=true)
 
 On the client
 
-![On the client](https://github.com/jasonsalas/protobank/blob/main/client.JPG?raw=true)
+![On the client](https://github.com/jasonsalas/protobank/blob/main/images/client.JPG?raw=true)
