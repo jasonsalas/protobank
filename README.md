@@ -16,6 +16,9 @@ I explain it all [on my blog](https://medium.com/@jasonsalas671/protobank-server
 - Spin-up a container: `docker run --name protobank -p 50051:50051 -d protobank`
 - Start the client `go run --race ./cmd/client`
 
+Or alternatively, use the [Makefile](https://github.com/jasonsalas/protobank/blob/main/Makefile): 
+- `make docker`
+
 ### 3. From Docker Hub ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/jasonsalas/protobank/v1.0)
 - Pull the [cloud container image](https://hub.docker.com/repository/docker/jasonsalas/protobank): `docker pull jasonsalas/protobank:v1.0`
 - Spin-up a container: `docker run --name protobank -p 50051:50051 -d jasonsalas/protobank:v1.0`
